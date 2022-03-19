@@ -56,7 +56,7 @@ article p {
 footer {
     text-align: center;
     background-color: #3a6;
-    color: grey;
+    color: #333;
     padding: 20px;
     position: absolute;
     bottom: 0;
@@ -66,4 +66,10 @@ footer {
 footer a {
     text-decoration: solid;
     color: #333;
+}
+
+footer #copyright {
+    text-align: left;
+    color: #333;
+    position: absolute
 }
