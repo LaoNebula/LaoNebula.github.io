@@ -63,13 +63,12 @@ footer {
     width: 100%;
 }
 
-footer a {
+footer > a {
     text-decoration: solid;
     color: #333;
 }
 
-footer #copyright {
+footer > #copyright {
     text-align: left;
-    color: #333;
     position: absolute
 }
