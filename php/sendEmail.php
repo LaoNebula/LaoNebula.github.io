@@ -27,8 +27,15 @@ if (isset($_POST['sendBtn'])) {
 			</body>
 			</html>';
 
-    $result = @mail($toEmail, $subject, $message, $headers);
+    $result = mail($toEmail, $subject, $message, $headers);
 
-    echo '<script>alert("Email sent successfully!")</script>';
-    echo '<script>window.location.href="contact.php";</script>';
+    if ($result) {
+        echo "<script>alert('Success')</script>";
+    }
+    else {
+        echo "<script>alert('Failed')</script>";
+    }
+
+    // echo '<script>alert("Email sent successfully!")</script>';
+    echo '<script>window.location.href="../contact.php";</script>';
 }
